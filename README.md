@@ -3,7 +3,7 @@
 
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
-3. [File Descriptions](#files)
+3. [File Descriptions](#files_des)
 4. [Requirements](#requirements)
 5. [Fast guide](#Fast_guide)
 6. [Licensing, Authors, and Acknowledgements](#licensing)
@@ -23,7 +23,7 @@ For this project, I was interestested in using Colombia Housing Properties Price
 The database used is not offered integrated into this repository due to space reasons, but it can be downloaded [here](https://www.kaggle.com/julianusugaortiz/colombia-housing-properties-price)
 
 
-## File Descriptions <a name="files"></a>
+## File Descriptions <a name="files_des"></a>
 
 There is an only notebooks available here to showcase work related to the above questions. In the data folder we have several files:
 
