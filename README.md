@@ -4,8 +4,9 @@
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-4. [Results](#results)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+4. [Requirements](#requirements)
+5. [Results](#Fast_guide)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
 
@@ -13,32 +14,32 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 ## Project Motivation<a name="motivation"></a>
 
-For this project, I was interestested in using Stack Overflow data from 2017 to better understand:
+For this project, I was interestested in using Colombia Housing Properties Price available at kaggle:
 
-1. How other developers suggested breaking into the field (what education to pursue)?
-2. What factors about an individual contributed to salary?
-3. How bias played a role in the suggestions of developers for how to break into the field?
-4. What was the state of bootcamps for assisting individuals with breaking into developer roles?
-5. How were bootcamps assisting with increasing diversity in tech careers?
+1. Are there significant differences in property prices between different regions of the country?
+2. Is there a natural way to group properties based on their characteristics?
+3. Which variables allow us to better predict the price of a property and how much precision is achieved?
 
-The full set of files related to this course are owned by Udacity, so they are not publicly available here.  However, you can see pieces of the analysis here.  This README also serves as a template for students to follow in creating their own project README files.
+The database used is not offered integrated into this repository due to space reasons, but it can be downloaded [here](https://www.kaggle.com/julianusugaortiz/colombia-housing-properties-price)
 
 
 ## File Descriptions <a name="files"></a>
 
-There are 3 notebooks available here to showcase work related to the above questions.  Each of the notebooks is exploratory in searching through the data pertaining to the questions showcased by the notebook title.  Markdown cells were used to assist in walking through the thought process for individual steps.  
+There is an only notebooks available here to showcase work related to the above questions. In the data folder we have several files:
 
-There is an additional `.py` file that runs the necessary code to obtain the final model used to predict salary.
+1. **regiones.csv:** Allows mapping departments to regions, and offers a key for merging between shapefile and kaggle database
+2. **depto files:** They contain all the relevant information from the department layer. These files are required to create the Choroplet
+3. **co_properties.csv:** This file is not actually included, however the code allows you to connect to the kaggle site and automatically download it to the data folder, as long as you have the authentication credentials that the kaggle library requires for these purposes. Here is a documentation about it. If you have problems with the download try downloading the file manually and disabling the download function in the notebook.
 
-## Results<a name="results"></a>
+## Requirements <a name="requirements"></a>
 
-The main findings of the code can be found at the post available [here](https://medium.com/@josh_2774/how-do-you-become-a-developer-5ef1c1c68711).
+The most important packages required are: geopandas, folium, sklearn, kaggle, numpy, pandas
+
+
+## Fast guide<a name="Fast_guide"></a>
+
+TFor a quick demo of map display you can check my post on Medium [here](https://hector-montes.medium.com/porqu%C3%A9-folium-y-geopandas-son-la-mejor-combinaci%C3%B3n-para-modelado-de-datos-georreferenciados-240d99f4cdde).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-Must give credit to Stack Overflow for the data.  You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/stackoverflow/so-survey-2017/data).  Otherwise, feel free to use the code here as you would like!
-
-## Este es un título de prueba
-
-Quiero ver si estos cambios se están reflejando en el repositorio remoto!! Otra vez
-
+Must give credit to kaggle for the data.  You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/julianusugaortiz/colombia-housing-properties-price).  Otherwise, feel free to use the code here as you would like!
