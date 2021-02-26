@@ -38,7 +38,7 @@ The most important packages required are: geopandas, folium, sklearn, kaggle, nu
 
 ## Fast guide<a name="Fast_guide"></a>
 
-For a quick demo of map display you can check my post on Medium [here](https://hector-montes.medium.com/porqu%C3%A9-folium-y-geopandas-son-la-mejor-combinaci%C3%B3n-para-modelado-de-datos-georreferenciados-240d99f4cdde).
+For a quick demo about how map are displayed, you can check my post on Medium [here](https://hector-montes.medium.com/porqu%C3%A9-folium-y-geopandas-son-la-mejor-combinaci%C3%B3n-para-modelado-de-datos-georreferenciados-240d99f4cdde).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
